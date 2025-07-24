@@ -1,4 +1,5 @@
 #!/usr/bin/sh
+# Raspberry Pi 5 setup script for 64-bit Desktop
 sudo apt remove firefox chromium orca thonny geany dillo lynx emacsen-common -y
 sudo apt autoremove -y
 sudo apt update && sudo apt upgrade -y
