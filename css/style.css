@@ -1,0 +1,101 @@
+:root {
+	--bg: #fafafa;
+	--fg: #1b1b1b;
+}
+
+@media (prefers-color-scheme: light) {
+	.light {
+		display: block;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--fg: #fafafa;
+		--bg: #1b1b1b;
+	}
+    a {
+        color: #bdbcff;
+    }
+	.dark {
+		display: block;
+	}
+}
+
+body {
+	width: 98%;
+	margin: 0.1em auto;
+	background: var(--bg);
+	color: var(--fg);
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		width: 90%;
+		font-size: 1.1em;
+	}
+
+	.columns {
+		columns: 1;
+	}
+	img {
+		max-width: 90vw;
+		height: auto;
+	}
+	iframe {
+		max-width: 90vw;
+		height: 90vw;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	img {
+		max-width: 60vw;
+		height: auto;
+	}
+}
+
+@media (min-width: 1025px) {
+	img {
+		max-width: 35vw;
+		height: auto;
+	}
+}
+
+pre {
+    font-family: 'Liberation Sans', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    font-family: 'Liberation Sans', sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    font-family: 'Liberation Sans', sans-serif;
+    font-size: 20px;
+}
+
+lh {
+    font-family: 'Liberation Sans', sans-serif;
+    font-size: 20px;
+}
+
+li {
+    font-family: 'Liberation Sans', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Liberation Sans', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Liberation Sans', sans-serif;
+}
+
+h2 {
+	font-family: 'Liberation Sans', sans-serif;
+}
