@@ -1,5 +1,5 @@
 cc = gcc
-flags = -Wall -Wextra -Werror -fsanitize=undefined,address -MMD -MP -std=c17
+flags = -Wall -Wextra -Werror -fsanitize=undefined,address -march=native -MMD -MP -std=c17
 source = inductive_data_type.c
 target = idt
 
