@@ -15,7 +15,7 @@ debug: $(source)
 	mkdir -p $(objs_dir)
 	mkdir -p $(deps_dir)
 	$(cc) $(debug_flags) -c $(source)
-	$(cc) -o $(target) *.o -fsanitize=undefined,address
+	$(cc) -o $(target) *.o
 	mv *.o $(objs_dir)/$(target).o
 	mv *.d $(deps_dir)/$(target).d
 san: $(source)
@@ -29,10 +29,9 @@ release: $(source)
 	mkdir -p $(objs_dir)
 	mkdir -p $(deps_dir)
 	$(cc) $(release_flags) -c $(source)
-	$(cc) -o $(target) *.o -fsanitize=undefined,address
+	$(cc) -o $(target) *.o
 	mv *.o $(objs_dir)/$(target).o
 	mv *.d $(deps_dir)/$(target).d
 clean:
 	rm -rf $(objs_dir) $(deps_dir)
 	rm $(target)
-
